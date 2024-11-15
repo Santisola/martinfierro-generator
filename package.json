@@ -17,6 +17,10 @@
   },
   "keywords": [
     "Lorem Ipsum",
+    "Martin Fierro generator",
+    "Martin Fierro",
+    "Martin",
+    "Fierro",
     "Lorem",
     "Ipsum",
     "dummy",
@@ -29,9 +33,9 @@
   "author": "Santiago Isola",
   "license": "ISC",
   "bugs": {
-    "url": "https://martinfierro-generator.netlify.app/"
+    "url": "https://github.com/Santisola/martinfierro-generator/issues"
   },
-  "homepage": "https://github.com/Santisola/martinfierro-generator#readme",
+  "homepage": "https://martinfierro-generator.netlify.app/",
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
