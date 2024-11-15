@@ -12,7 +12,7 @@ export function Layout(props: LayoutProps) {
                     </h1>
                 </div>
             </header>
-            <main className="max-w-5xl mx-auto py-6 sm:px-6 lg:px-4">
+            <main className="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-4">
                 {props.children}
             </main>
         </div>
