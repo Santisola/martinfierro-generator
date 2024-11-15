@@ -4,10 +4,12 @@
   "description": "Generate \"Lorem Ipsum\" text from \"El Gaucho Martín Fierro\" by José Hernandez",
   "main": "./build/main.js",
   "scripts": {
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production",
-    "build:types": "tsc --emitDeclarationOnly",
-    "prepare": "npm run build && npm run build:types"
+    "start": "webpack serve --config webpack.web.config.js --mode development",
+    "build:lib": "webpack --config webpack.config.js --mode production",
+    "build:web": "webpack --config webpack.web.config.js --mode production",
+    "build": "npm run build:lib && npm run build:web",
+    "build:types": "tsc --emitDeclarationOnly --outDir dist/lib",
+    "prepare": "npm run build:lib && npm run build:types"
   },
   "repository": {
     "type": "git",
@@ -34,10 +36,19 @@
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
     "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
+    "css-loader": "^6.11.0",
     "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3",
+    "use-debounce": "^10.0.4",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
