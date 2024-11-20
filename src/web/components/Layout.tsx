@@ -1,3 +1,4 @@
+import React from 'react';
 import { Github, Package } from 'lucide-react';
 
 interface LayoutProps {
@@ -14,7 +15,7 @@ export function Layout(props: LayoutProps) {
                     </h1>
                 </div>
             </header>
-            <main className="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-4">
+            <main className="max-w-2xl w-full mx-auto py-6 px-4 sm:px-6 lg:px-4">
                 {props.children}
             </main>
             <footer className='text-gray-900 dark:text-gray-100 text-center py-8 px-4'>

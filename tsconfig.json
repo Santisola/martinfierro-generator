@@ -22,7 +22,8 @@
 	  "baseUrl": "./src",
 	  "paths": {
 		"@/*": ["./*"]
-	  }
+	  },
+	  "types": ["react", "react-dom", "node"]
 	},
 	"include": [
 	  "src/lib/**/*",
