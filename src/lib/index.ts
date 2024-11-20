@@ -1,5 +1,5 @@
 import { MARTIN_FIERRO } from "../constants";
-// ! TODO: No funciona el import del paquete `Module not found: Can't resolve 'martinfierro-generator'`
+
 /**
  * Generates a string of Jose Hernandez's epic poem "Martin Fierro"
  * 
