@@ -15,10 +15,10 @@ npm install martinfierro-generator
 ### As a npm package
 
 ```javascript
-import { generate } from 'martinfierro-generator';
+import { MartinFierro } from 'martinfierro-generator';
 
 // Generate 100 characters of Martín Fierro text
-const text = generate(100);
+const text = MartinFierro(100);
 console.log(text);
 ```
 
@@ -29,7 +29,7 @@ You can also use our web interface to generate text directly:
 
 ## Reference
 
-### `generate(stringLength)`
+### `MartinFierro(stringLength)`
 
 Generates a string of text from "El Gaucho Martín Fierro".
 
@@ -45,18 +45,18 @@ Generates a string of text from "El Gaucho Martín Fierro".
 #### Example
 
 ```javascript
-import { generate } from 'martinfierro-generator';
+import { MartinFierro } from 'martinfierro-generator';
 
 // Generate 200 characters
-const shortText = generate(200);
+const shortText = MartinFierro(200);
 
 // Generate 1000 characters
-const longText = generate(1000);
+const longText = MartinFierro(1000);
 ```
 
 ## Error Handling
 
-The `generate` function includes the following error checks:
+The `MartinFierro` function includes the following error checks:
 
 - Validates that `stringLength` is a number
 - Ensures `stringLength` is greater than zero

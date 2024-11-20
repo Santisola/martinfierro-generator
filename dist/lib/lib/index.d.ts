@@ -4,5 +4,4 @@
  * @param stringLength The length of the requested Martin Fierro's string.
  * @returns An EPIC string by El Gaucho Martín Fierro. | Empty string in case of an error
  */
-declare const generate: (stringLength: number) => string;
-export { generate };
+export declare const MartinFierro: (stringLength: number) => string;
