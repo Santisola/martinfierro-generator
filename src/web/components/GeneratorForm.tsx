@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { generate } from "../../lib";
+import { MartinFierro } from "../../lib";
 import { useDebounce } from "use-debounce";
 import CopyIcon from "./CopyIcon";
 import CheckIcon from "./CheckIcon";
@@ -14,7 +14,7 @@ export default function GeneratorForm() {
   
   useEffect(() => {
     if (value) {
-      setMartinFierro(generate(value));
+      setMartinFierro(MartinFierro(value));
       return
     }
 

@@ -1,12 +1,12 @@
 import { MARTIN_FIERRO } from "../constants";
-
+// ! TODO: No funciona el import del paquete `Module not found: Can't resolve 'martinfierro-generator'`
 /**
  * Generates a string of Jose Hernandez's epic poem "Martin Fierro"
  * 
  * @param stringLength The length of the requested Martin Fierro's string.
  * @returns An EPIC string by El Gaucho Martín Fierro. | Empty string in case of an error
  */
-const generate = (stringLength: number):string => {
+export const MartinFierro = (stringLength: number):string => {
     try {
         if (typeof stringLength !== 'number') {
             throw new Error('stringLength must be a number');
@@ -30,5 +30,3 @@ const generate = (stringLength: number):string => {
         return '';
     }
 }
-
-export {generate}
