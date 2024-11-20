@@ -1,6 +1,6 @@
 {
   "name": "martinfierro-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate \"Lorem Ipsum\" text from \"El Gaucho Martín Fierro\" by José Hernandez",
   "main": "./dist/lib/main.js",
   "types": "./dist/lib/lib/index.d.ts",
